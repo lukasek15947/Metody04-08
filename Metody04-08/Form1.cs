@@ -30,5 +30,12 @@ namespace Metody04_08
             int faktorial = CelaCisla.Faktorial(a);
             MessageBox.Show("Faktoriál je: " + faktorial);
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox1.Text);
+            int ciflichsoucet = CelaCisla.CifLichSoucet(a);
+            MessageBox.Show("Součet lichých cifer je: " + ciflichsoucet);
+        }
     }
 }

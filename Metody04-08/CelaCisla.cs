@@ -41,5 +41,21 @@ namespace Metody04_08
             }
             return faktorial;
         }
+
+        public static int CifLichSoucet(int a)
+        {
+            int cifra = 0;
+            int ciflichsoucet = 0;
+            while (a > 0)
+            {
+                cifra = a % 10;
+                if (cifra % 2 != 0)
+                {
+                    ciflichsoucet += cifra;
+                }
+                a = a / 10;
+            }
+            return ciflichsoucet;
+        }
     }
 }
