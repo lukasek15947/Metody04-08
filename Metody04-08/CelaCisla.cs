@@ -29,5 +29,17 @@ namespace Metody04_08
             }
             return vysledek;
         }
+
+        public static int Faktorial(int a)
+        {
+            int faktorial = 1;
+            if (a < 0) throw new ArgumentException("Faktoriál nelze počítat ze záporného čísla");
+            else if (a > 12) throw new ArgumentOutOfRangeException("Příliš velké číslo pro faktoriál");
+            for (int i = 1; i <= a; ++i)
+            {
+                faktorial *= i;
+            }
+            return faktorial;
+        }
     }
 }

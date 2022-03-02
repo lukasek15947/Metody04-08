@@ -23,5 +23,12 @@ namespace Metody04_08
             int b = int.Parse(textBox2.Text);
             MessageBox.Show("Mocnina je: " + CelaCisla.Mocnina(a, b));
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox1.Text);
+            int faktorial = CelaCisla.Faktorial(a);
+            MessageBox.Show("Faktoriál je: " + faktorial);
+        }
     }
 }
