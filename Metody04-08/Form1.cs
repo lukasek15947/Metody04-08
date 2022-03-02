@@ -37,5 +37,12 @@ namespace Metody04_08
             int ciflichsoucet = CelaCisla.CifLichSoucet(a);
             MessageBox.Show("Součet lichých cifer je: " + ciflichsoucet);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox1.Text);
+            if (CelaCisla.JePrvocislo(a)) MessageBox.Show("číslo " + a + " je prvočíslo");
+            else MessageBox.Show("číslo " + a + " není prvočíslo");
+        }
     }
 }

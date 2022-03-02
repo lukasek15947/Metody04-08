@@ -57,5 +57,15 @@ namespace Metody04_08
             }
             return ciflichsoucet;
         }
+
+        public static bool JePrvocislo(int a)
+        {
+            bool prvocislo = a != 1;
+            for (int delitel = 2; delitel <= Math.Sqrt(a) && prvocislo; ++delitel)
+            {
+                if (a % delitel == 0) prvocislo = false;
+            }
+            return prvocislo;
+        }
     }
 }
