@@ -68,7 +68,7 @@ namespace Metody04_08
             return prvocislo;
         }
 
-        public static int PocetDeliteluSud(int a)
+        public int PocetDeliteluSud(int a)
         {
             int pocet = 0;
             for (int i = 1; i <= a; ++i)
